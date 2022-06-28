@@ -1,0 +1,77 @@
+// font imports
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+// colors
+
+// typography
+
+// inter typography mixin
+@mixin type-1($size) {
+  @if($size == 8) {
+    font-size: 8px;
+    line-height: 28px;
+  }
+  @else if ($size == 14 ) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  @else if ($size == 16 ) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @else if ($size == 20 ) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @else if ($size == 25 ) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @else if ($size == 35 ) {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  @else if ($size == 54 ) {
+    font-size: 54px;
+    line-height: 76px;
+  }
+}
+
+// open sans typography mixin
+@mixin type-2($size) {
+  @if($size == 8) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+    line-height: 28px;
+  }
+  @else if ($size == 14 ) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  @else if ($size == 16 ) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @else if ($size == 20 ) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @else if ($size == 25 ) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @else if ($size == 35 ) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
+
+.container {
+  width: 1115px;
+  margin: 0 auto;
+  }
