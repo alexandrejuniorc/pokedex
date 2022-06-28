@@ -1,0 +1,44 @@
+@import './Global.scss';
+
+.bgHome{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding-top: 105px;
+
+  img{
+    position: fixed;
+    width: 793px;
+  }
+}
+
+.bgContentHome{
+  h1{
+    @include type-1(54);
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 18px
+  }
+
+  p{
+    @include type-1(16);
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 43px;
+  }
+
+  a{
+    background-color: #48D0B0;
+    padding: 18px 27px 24px 26px;
+    border-radius: 11px;
+    color: #fff;
+    @include type-1(20);
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    transition: .2s;
+
+    &:hover{
+      background-color: darken($color: #48D0B0, $amount: 10);
+    }
+  }
+}
