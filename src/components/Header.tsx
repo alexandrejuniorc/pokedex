@@ -1,6 +1,9 @@
-import Logo from '../assets/imgs/Logo.svg';
-import { Link } from 'react-router-dom';
+// styles - scss
 import '../styles/Header.scss';
+// react uses - router dom
+import Logo from '../assets/imgs/Logo.svg';
+// components
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (

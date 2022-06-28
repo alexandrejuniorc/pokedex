@@ -1,10 +1,11 @@
+// styles - scss
 import '../styles/Home.scss';
-
+// components
 import { Header } from 'src/components/Header';
-
-import Banner from '../assets/imgs/BannerHome.svg';
-
+// react uses - router dom
 import { Link } from 'react-router-dom';
+// img's
+import Banner from '../assets/imgs/BannerHome.svg';
 
 export const Home = () => {
   return (
