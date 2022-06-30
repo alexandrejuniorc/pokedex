@@ -46,37 +46,7 @@ export const Pokedex = () => {
       setPokemons(newPokes);
     };
 
-    // get all pokemons
-    const getAllPokemons = async () => {
-      const { data }: any = await axios
-        .get('https://pokeapi.co/api/v2/pokemon?offset=5&limit=5')
-        .catch((error) => console.log(error));
-      const results: any = await data.results;
-      // returns a pokemon object
-      // console.log(results);
-
-      const newPokes: any = pokemons;
-      // return pokemon skills
-      // console.log(newPokes);
-
-      for (const pokemon of results) {
-        const { data } = await axios.get(pokemon.url);
-        // return pokemon skills
-        // console.log(data);
-
-        const newPoke = Object.assign({ ...pokemon }, data);
-        // returns each pokemon's object along with its abilities
-        // console.log(newPoke);
-
-        newPokes.push(newPoke);
-        // returns an object with all pokemons
-        // console.log(newPokes);
-      }
-      setPokemons(newPokes);
-    };
-
     showPokemons();
-    getAllPokemons();
   }, []);
 
   // console.log(pokemons);
