@@ -45,7 +45,7 @@ export const Pokedex = () => {
         // console.log(data);
         const newPoke = Object.assign({ ...pokemon }, data);
         // returns an object with all pokemons
-        // console.log(newPoke);
+        console.log(newPoke);
         newPokes.push(newPoke);
       }
       setPokemons(newPokes);

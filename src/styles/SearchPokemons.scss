@@ -1,0 +1,68 @@
+@import './Global.scss';
+
+.bgSearchPoke{
+  padding-top: 73px;
+
+    h1{
+      @include type-1(35);
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-style: normal;
+      margin-bottom: 33px;
+    }
+}
+
+.bgInputSearch{
+  border: 1px solid #F1F1F1;
+  border-radius: 40px;
+  box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 31px;
+
+    input{
+      border: none;
+      width: 100%;
+      outline: none;
+      padding: 16px 0;
+      @include type-1(16);
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    img{
+      width: 24px;
+      height: 24px;
+    }
+}
+
+.bgOptions{
+  margin: 36px 0 75px 0;
+}
+
+.bgOptions {
+display: flex;
+width: max-content;
+}
+
+.optionsType {
+  border: none;
+  background: #F2F2F2;
+  box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.1);
+  border-radius: 4px;
+  padding: 1px 51px;
+  @include type-2(16);
+  font-style: normal;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+}
+
+.optionsMethod{
+  margin-left: 65px;
+  
+  .optionsType:nth-child(1){
+    margin-right: 65px;
+  }
+}
